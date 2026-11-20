@@ -56,7 +56,7 @@ This template therefore ships the full setup the SearXNG project recommends for 
 
 **Resources and plans**
 
-Measured on Railway: SearXNG about RAM_SX idle with 2 workers, Valkey about RAM_VK. Both fit the Free plan (0.5 GB per service). Each extra worker adds about 60-100 MB.
+Measured on Railway: SearXNG about 0.25 GB idle with 2 workers, Valkey about 20 MB. Both fit the Free plan (0.5 GB per service). Each extra worker adds roughly 80-120 MB; use `SEARXNG_WORKERS=1` on the Free plan if you need headroom.
 
 **Scaling and upgrades**
 

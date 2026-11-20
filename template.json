@@ -109,7 +109,7 @@
         },
         "SEARXNG_WORKERS": {
           "defaultValue": "2",
-          "description": "Web server processes (1-16). Each adds about 60-100 MB RAM.",
+          "description": "Web server processes (1-16). Each adds roughly 80-120 MB RAM.",
           "required": false
         },
         "SEARXNG_THREADS": {

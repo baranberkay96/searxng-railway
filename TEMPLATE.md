@@ -60,7 +60,7 @@ See template.json; every variable has a description. Validated at start: `PORT`,
 
 ## Resource profile
 
-Estimate (measured values in the round-12 report): SearXNG RAM_SX idle with 2 granian workers, up to ~300 MB under load; Valkey RAM_VK. Roughly $2-4/month idle at Railway prices. Minimum plan: Free (0.5 GB per service).
+Estimate (measured values in the round-12 report): SearXNG 0.25 GB idle with 2 granian workers, up to ~300 MB under load; Valkey 20 MB. Roughly $2-4/month idle at Railway prices. Minimum plan: Free (0.5 GB per service).
 
 ## Verification checklist
 
