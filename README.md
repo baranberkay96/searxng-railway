@@ -52,7 +52,7 @@ This template therefore ships the full setup the SearXNG project recommends for 
 
 **Variables**
 
-`SEARXNG_SECRET` is generated (48 characters). `SEARXNG_BASE_URL` follows the Railway domain; change it when you add a custom domain. `SEARXNG_API_FORMATS` (default `json,csv,rss`), `SEARXNG_INSTANCE_NAME`, `SEARXNG_SAFE_SEARCH` (0-2), `SEARXNG_METHOD` (GET or POST), `SEARXNG_IMAGE_PROXY`, and `SEARXNG_WORKERS`/`SEARXNG_THREADS` (web server processes and threads) are set at every start; invalid values fall back to the defaults with a warning in the log. For engine choices and other settings, fork the repo and extend the generated `settings.yml` in `services/searxng/railway/write_config.py`.
+`SEARXNG_SECRET` is generated (48 characters). `SEARXNG_BASE_URL` follows the Railway domain; change it when you add a custom domain. `SEARXNG_CONTACT_URL` is sent to Wikipedia, Wikidata and OpenStreetMap, whose API policies require operator contact details; it defaults to your instance URL, replace it with `mailto:` and your email. Without it those engines stay off. `SEARXNG_API_FORMATS` (default `json,csv,rss`), `SEARXNG_INSTANCE_NAME`, `SEARXNG_SAFE_SEARCH` (0-2), `SEARXNG_METHOD` (GET or POST), `SEARXNG_IMAGE_PROXY`, and `SEARXNG_WORKERS`/`SEARXNG_THREADS` (web server processes and threads) are set at every start; invalid values fall back to the defaults with a warning in the log. For engine choices and other settings, fork the repo and extend the generated `settings.yml` in `services/searxng/railway/write_config.py`.
 
 **Resources and plans**
 
