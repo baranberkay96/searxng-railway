@@ -1,0 +1,10 @@
+# Used only if railway/write_config.py fails. Limiter on, JSON API on.
+use_default_settings: true
+search:
+  formats:
+    - html
+    - json
+server:
+  limiter: true
+  public_instance: false
+  image_proxy: true
