@@ -67,6 +67,14 @@ case "${SEARXNG_BASE_URL:-}" in
   *) log "WARNING: SEARXNG_BASE_URL='${SEARXNG_BASE_URL}' does not start with http:// or https://, ignoring it"; unset SEARXNG_BASE_URL ;;
 esac
 
+# --- Contact URL (Wikipedia, Wikidata and OpenStreetMap refuse clients without one) ---
+case "${SEARXNG_CONTACT_URL:-}" in
+  http://*|https://*|mailto:?*@?*) ;;
+  '') log "WARNING: SEARXNG_CONTACT_URL is empty; the Wikipedia, Wikidata and OpenStreetMap engines stay disabled" ;;
+  *) log "WARNING: SEARXNG_CONTACT_URL must start with https:// or mailto:; the Wikipedia, Wikidata and OpenStreetMap engines stay disabled"; unset SEARXNG_CONTACT_URL ;;
+esac
+[ -n "${SEARXNG_CONTACT_URL:-}" ] || unset SEARXNG_CONTACT_URL
+
 # --- settings.yml and limiter.toml (written by Python so every value is quoted safely) ---
 export RAILWAY_SAFE_SEARCH="$(int_val SEARXNG_SAFE_SEARCH 0 0 2)"
 export RAILWAY_CONF="$CONF"

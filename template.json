@@ -52,6 +52,11 @@
           "description": "Public URL of this instance. Change it when you add a custom domain.",
           "required": true
         },
+        "SEARXNG_CONTACT_URL": {
+          "defaultValue": "https://${{RAILWAY_PUBLIC_DOMAIN}}/",
+          "description": "Operator contact (https:// URL or mailto:you@example.com) sent to Wikipedia, Wikidata and OpenStreetMap, whose API policies require it. Replace with your own email or site.",
+          "required": true
+        },
         "SEARXNG_VALKEY_URL": {
           "defaultValue": "valkey://default:${{Valkey.REDIS_PASSWORD}}@${{Valkey.RAILWAY_PRIVATE_DOMAIN}}:6379/0",
           "description": "Valkey connection for the bot limiter (private network).",
