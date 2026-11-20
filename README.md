@@ -1,5 +1,7 @@
 # Deploy and Host SearXNG with Railway
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/searxng-private-metasearch-json-api-valk?referralCode=20H68q)
+
 SearXNG is a free, open-source metasearch engine: it sends your query to Google, Bing, DuckDuckGo, Brave, Wikipedia and up to 200 other sources and merges the results, without tracking or profiling users. This template runs SearXNG with its JSON API enabled for AI agents and the bot limiter backed by Valkey.
 
 > Community template, not affiliated with the SearXNG project.
